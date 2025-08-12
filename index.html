@@ -130,7 +130,9 @@
   async function fetchStockPrices() {
     try {
       // Using a free API from Financial Modeling Prep - no API key needed for this endpoint
-      const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/${stocks.join(',')}?apikey=demo`);
+      const response = await fetch(`https://financialmodelingprep.com/api/v3/quote/${stocks.join(',')}?apikey=ztOyx74hhcIuwAlZtVHsnEM8VuNFEY10
+
+`);
       const data = await response.json();
 
       const tickerSpan = document.querySelector('.ticker span');
